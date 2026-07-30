@@ -192,6 +192,11 @@ model ShellToolboxTool extends ToolboxTool {
   @minLength(1)
   name: string;
 
+  /**
+   * The description of this shell tool for use by the model.
+   */
+  description: string;
+
   ...OmitProperties<ToolFields<OpenAI.FunctionShellToolParam>, "environment">;
 
   /**

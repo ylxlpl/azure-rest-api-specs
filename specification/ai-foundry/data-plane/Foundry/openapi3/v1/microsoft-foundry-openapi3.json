@@ -53488,7 +53488,8 @@
         "type": "object",
         "required": [
           "type",
-          "name"
+          "name",
+          "description"
         ],
         "properties": {
           "type": {
@@ -53502,6 +53503,10 @@
             "type": "string",
             "minLength": 1,
             "description": "The unique name of this shell tool within the toolbox version."
+          },
+          "description": {
+            "type": "string",
+            "description": "The description of this shell tool for use by the model."
           },
           "allowed_callers": {
             "anyOf": [
